@@ -6,9 +6,10 @@
     --cor-principal: #FACC00;
     --cor-secundaria: #F5E300;
     --cor-terciaria: #FAAD00;
-    --cor-texto: #000000;
-    --cor-texto-destaque: #ffffff;
-    --cor-texto-desfoque: #F5EB62;
+    --cor-texto: #242424;
+    --cor-texto-desfoque: #808080;
+    --cor-destaque: #ffffff;
+    --cor-desfoque: #F5EB62;
 }
 
 * {
@@ -19,6 +20,7 @@
 
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--cor-texto);
 }
 
 body {
@@ -44,7 +46,7 @@ section#login {
     width: 280px;
     height: 560px;
     border-radius: 12px;
-    background-color: white;
+    background-color: var(--cor-destaque);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 
@@ -53,8 +55,10 @@ section#login {
 }
 
 section#login > div#img {
-    display: block;
+    display: flex;
     height: 200px;
+    justify-content: center;
+    align-items: center;
     background: url(../img/wheat-field.jpg) no-repeat left bottom / cover;
 }
 
@@ -64,12 +68,13 @@ section#login > div#form {
 }
 
 div#form > h1 {
-    margin: 10px 0 20px 0;
+    margin-bottom: 20px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 div#form > p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -90,12 +95,12 @@ form > div.campo span {
 }
 
 form > div.campo > input {
-    padding: 12px 24px;
+    padding: 12px 12px;
     width: calc(100% - 54px);
     height: 48px;
     font-size: 1em;
     border: 1px solid var(--cor-texto);
-    border-radius: 0;
+    border-radius: 0;    
 
     transform: translateY(-6px);
 }
@@ -105,7 +110,8 @@ form > a.botao {
     margin: 12px 0 20px 0;
     text-align: left;
     text-decoration: none;
-    color: var(--cor-texto);
+    font-size: 1em;
+    color: var(--cor-texto-desfoque);
 }
 
 form > a.botao:hover {
@@ -125,5 +131,5 @@ form > input[type=submit] {
 }
 
 form > input[type=submit]:hover {
-    background-color: var(--cor-texto-desfoque);
+    background-color: var(--cor-desfoque);
 }
