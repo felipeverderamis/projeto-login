@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-query.css">
 </head>
@@ -16,15 +17,18 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Boas-vindas ao SquareTech!</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <label for="login_id">Email: </label>
-                        <input type="email" name="login" id="login_id" placeholder="Email">
+                        <label for="login_id"><span class="material-symbols-outlined">mail</span></label>
+                        <input type="email" name="login" id="login_id" placeholder="Email" autocomplete="email" required maxlength="40">
                     </div>
                     <div class="campo">
-                        <label for="senha_id">Senha: </label>
-                        <input type="password" name="senha" id="senha_id" placeholder="Senha">
+                        <label for="senha_id"><span class="material-symbols-outlined">lock</span></label>
+                        <input type="password" name="senha" id="senha_id" placeholder="Senha" autocomplete="current-password" required minlength="8">
                     </div>
+                    <a href="esqueci.html"><span class="material-symbols-outlined">key</span>Esqueci a senha</a> <br>
+                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Cadastrar">
                 </form>
             </div>
         </section>
