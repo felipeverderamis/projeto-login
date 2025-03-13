@@ -3,12 +3,12 @@
 /* Paleta de cores */
 
 :root {
-    --cor-principal: #FAD200;
-    --cor-secundaria: #FAEE00;
-    --cor-terciaria: #B5F500;
+    --cor-principal: #FACC00;
+    --cor-secundaria: #F5E300;
+    --cor-terciaria: #FAAD00;
     --cor-texto: #000000;
     --cor-texto-destaque: #ffffff;
-    --cor-texto-desfoque: #CFF562;
+    --cor-texto-desfoque: #F5EB62;
 }
 
 * {
@@ -47,6 +47,9 @@ section#login {
     background-color: white;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease;
 }
 
 section#login > div#img {
