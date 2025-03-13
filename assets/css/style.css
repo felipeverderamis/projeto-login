@@ -11,3 +11,51 @@
     --cor-texto-desfoque: #CFF562;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: var(--cor-principal);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    /* Como centralizar no método tradicional (antigo), antes das novas tecnologias (flexbox) */
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    /* Como centralizar no método tradicional (antigo), antes das novas tecnologias (flexbox) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 280px;
+    height: 560px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section#login > div#img {
+    display: block;
+    height: 200px;
+    background: url(../img/wheat-field.jpg) no-repeat left bottom / cover;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 20px;
+}
