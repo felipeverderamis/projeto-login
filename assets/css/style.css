@@ -78,6 +78,10 @@ div#form > p {
     text-align: center;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 form > div.campo {
     margin: 10px 0;
 }
@@ -106,11 +110,11 @@ form > div.campo > input {
 }
 
 form > a.botao {
-    display: block;
-    margin: 12px 0 20px 0;
+    display: inline-block;
+    margin-bottom: 20px;
     text-align: left;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.875em;
     color: var(--cor-texto-desfoque);
 }
 
